@@ -9,3 +9,4 @@
 ###课件问题:源代码中的friends.plist中item0的online是String,应该修改为NSNumber.
 
 视频地址: http://www.jikexueyuan.com/course/405.html
+可以免费获取VIP,自行百度
