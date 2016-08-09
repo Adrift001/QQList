@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		56C83F881D58664A008A9C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83F871D58664A008A9C5F /* AppDelegate.swift */; };
-		56C83F8A1D58664A008A9C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83F891D58664A008A9C5F /* ViewController.swift */; };
 		56C83F8F1D58664A008A9C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C83F8E1D58664A008A9C5F /* Assets.xcassets */; };
 		56C83F921D58664A008A9C5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C83F901D58664A008A9C5F /* LaunchScreen.storyboard */; };
 		56C83F9D1D5866CB008A9C5F /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56C83F9C1D5866CB008A9C5F /* friends.plist */; };
@@ -29,15 +28,15 @@
 		56C83FDE1D58AD70008A9C5F /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FD21D58AD70008A9C5F /* View+SnapKit.swift */; };
 		56C83FDF1D58AD70008A9C5F /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FD31D58AD70008A9C5F /* ViewController+SnapKit.swift */; };
 		56C83FE11D58BDE9008A9C5F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FE01D58BDE9008A9C5F /* UIColor.swift */; };
+		56C83FE31D5992DE008A9C5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56C83FE21D5992DE008A9C5F /* Info.plist */; };
+		56C83FE51D5992ED008A9C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FE41D5992ED008A9C5F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56C83F841D58664A008A9C5F /* QQList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C83F871D58664A008A9C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56C83F891D58664A008A9C5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		56C83F8E1D58664A008A9C5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		56C83F911D58664A008A9C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		56C83F931D58664A008A9C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		56C83F9C1D5866CB008A9C5F /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		56C83FA11D586889008A9C5F /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		56C83FA31D5868FA008A9C5F /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
@@ -56,6 +55,8 @@
 		56C83FD21D58AD70008A9C5F /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		56C83FD31D58AD70008A9C5F /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		56C83FE01D58BDE9008A9C5F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		56C83FE21D5992DE008A9C5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C83FE41D5992ED008A9C5F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +105,8 @@
 			children = (
 				56C83F8E1D58664A008A9C5F /* Assets.xcassets */,
 				56C83F901D58664A008A9C5F /* LaunchScreen.storyboard */,
-				56C83F931D58664A008A9C5F /* Info.plist */,
 				56C83F9C1D5866CB008A9C5F /* friends.plist */,
+				56C83FE21D5992DE008A9C5F /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -113,8 +114,8 @@
 		56C83F9E1D586710008A9C5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56C83F891D58664A008A9C5F /* ViewController.swift */,
 				56C83FAA1D5870CB008A9C5F /* ListViewController.swift */,
+				56C83FE41D5992ED008A9C5F /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C83FE31D5992DE008A9C5F /* Info.plist in Resources */,
 				56C83F921D58664A008A9C5F /* LaunchScreen.storyboard in Resources */,
 				56C83F8F1D58664A008A9C5F /* Assets.xcassets in Resources */,
 				56C83F9D1D5866CB008A9C5F /* friends.plist in Resources */,
@@ -236,13 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C83FD51D58AD70008A9C5F /* ConstraintAttributes.swift in Sources */,
+				56C83FE51D5992ED008A9C5F /* ViewController.swift in Sources */,
 				56C83FDD1D58AD70008A9C5F /* SnapKit.swift in Sources */,
 				56C83FD41D58AD70008A9C5F /* Constraint.swift in Sources */,
 				56C83FDB1D58AD70008A9C5F /* EdgeInsets.swift in Sources */,
 				56C83FA21D586889008A9C5F /* GroupModel.swift in Sources */,
 				56C83FDE1D58AD70008A9C5F /* View+SnapKit.swift in Sources */,
 				56C83FDC1D58AD70008A9C5F /* LayoutConstraint.swift in Sources */,
-				56C83F8A1D58664A008A9C5F /* ViewController.swift in Sources */,
 				56C83FD71D58AD70008A9C5F /* ConstraintItem.swift in Sources */,
 				56C83FE11D58BDE9008A9C5F /* UIColor.swift in Sources */,
 				56C83FD81D58AD70008A9C5F /* ConstraintMaker.swift in Sources */,
@@ -398,6 +400,7 @@
 				56C83F981D58664A008A9C5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
