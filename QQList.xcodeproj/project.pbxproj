@@ -28,7 +28,6 @@
 		56C83FDE1D58AD70008A9C5F /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FD21D58AD70008A9C5F /* View+SnapKit.swift */; };
 		56C83FDF1D58AD70008A9C5F /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FD31D58AD70008A9C5F /* ViewController+SnapKit.swift */; };
 		56C83FE11D58BDE9008A9C5F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FE01D58BDE9008A9C5F /* UIColor.swift */; };
-		56C83FE31D5992DE008A9C5F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56C83FE21D5992DE008A9C5F /* Info.plist */; };
 		56C83FE51D5992ED008A9C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C83FE41D5992ED008A9C5F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -223,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C83FE31D5992DE008A9C5F /* Info.plist in Resources */,
 				56C83F921D58664A008A9C5F /* LaunchScreen.storyboard in Resources */,
 				56C83F8F1D58664A008A9C5F /* Assets.xcassets in Resources */,
 				56C83F9D1D5866CB008A9C5F /* friends.plist in Resources */,
@@ -361,7 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = QQList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QQList/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adrift.QQList;
@@ -373,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = QQList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QQList/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adrift.QQList;
