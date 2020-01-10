@@ -19,8 +19,8 @@ class HeaderView: UITableViewHeaderFooterView {
     var delegate: HeaderViewDelegate?
     var groupModel: GroupModel? {
         didSet {
-            button.setTitle(groupModel!.name!, forState: UIControlState.Normal)
-            label.text = "\(groupModel!.online!)/\(groupModel!.friends!.count)"
+            button.setTitle(groupModel!.name, for: UIControl.State.normal)
+            label.text = "\(groupModel!.online)/\(groupModel!.friends.count)"
         }
     }
 
@@ -48,11 +48,11 @@ class HeaderView: UITableViewHeaderFooterView {
     }
     
     override func didMoveToSuperview() {
-        button.imageView?.transform = groupModel!.isOpen ? CGAffineTransformMakeRotation(CGFloat(M_PI_2)) : CGAffineTransformMakeRotation(0)
+        button.imageView?.transform = groupModel!.isOpen ? CGAffineTransform(rotationAngle: CGFloat(M_PI_2)) : CGAffineTransform(rotationAngle: 0)
     }
     
     //MARK: - 内部方法
-    func clickEvent(sender: UIButton) {
+    @objc func clickEvent(sender: UIButton) {
         groupModel!.isOpen = !groupModel!.isOpen
         delegate?.clickHeaderView()
     }
@@ -60,29 +60,29 @@ class HeaderView: UITableViewHeaderFooterView {
     //MARK: - 懒加载
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.setBackgroundImage(UIImage(named: "header_bg"), forState: UIControlState.Normal)
-        button.setBackgroundImage(UIImage(named: "header_bg_highlighted"), forState: UIControlState.Highlighted)
-        button.setImage(UIImage(named: "arrow"), forState: UIControlState.Normal)
+        button.setBackgroundImage(UIImage(named: "header_bg"), for: UIControl.State.normal)
+        button.setBackgroundImage(UIImage(named: "header_bg_highlighted"), for: UIControl.State.highlighted)
+        button.setImage(UIImage(named: "arrow"), for: UIControl.State.normal)
         //按钮是由图片跟文字组成,所以需要设置内边距
-        button.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         //内容的位置,居左
-        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
         //设置标题内边距
-        button.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         //设置图片的位置
-        button.imageView?.contentMode = UIViewContentMode.Center
-        button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        button.imageView?.contentMode = UIView.ContentMode.center
+        button.setTitleColor(UIColor.black, for: UIControl.State.normal)
         
         //防止点击之后图片变形
         button.imageView?.clipsToBounds = false
         
-        button.addTarget(self, action: #selector(clickEvent(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(clickEvent(sender:)), for: UIControl.Event.touchUpInside)
         return button
     }()
     
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.textAlignment = NSTextAlignment.Center
+        label.textAlignment = NSTextAlignment.center
         return label
     }()
 }

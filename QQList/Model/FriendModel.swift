@@ -6,16 +6,13 @@
 //  Copyright © 2016年 adrift. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import HandyJSON
 
-class FriendModel: NSObject {
-    var icon: String?
-    var intro: String? //个性签名
-    var name: String?
-    var vip: NSNumber?
-    
-    init(dict: Dictionary <String, AnyObject>) {
-        super.init()
-        self.setValuesForKeysWithDictionary(dict)
-    }
+class FriendModel: HandyJSON {
+    var icon: String = ""
+    var intro: String = "" //个性签名
+    var name: String = ""
+    var vip: Int = 0
+    required init() {  }
 }
