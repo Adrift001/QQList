@@ -10,6 +10,6 @@
 视频地址: http://www.jikexueyuan.com/course/405.html
 可以免费获取VIP,自行百度
 
-###课件问题:视频源代码中的friends.plist中item0的online是String,应该修改为NSNumber.
+### 课件问题:视频源代码中的friends.plist中item0的online是String,应该修改为NSNumber.
 
-####基于Swift2.2
+#### 基于Swift2.2
